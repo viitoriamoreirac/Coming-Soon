@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+body {
+    background-color: rgb(20, 18, 18);
+    height: 100%;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header > img:nth-child(1) {
+    mix-blend-mode: difference;
+    transform: rotate(40deg) scale(75%);
+}
+
+header p, a{
+    color: #FFF;
+    text-decoration: none;
+    align-self: center;
+}
+
+#contacts {
+    padding-left: 8%;
+}
+
+header a:visited {
+    text-decoration: none;
+}
+header div {
+    display: flex;
+    background-color: rgb(118, 116, 126);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    flex-direction: column;
+    width: 450px;
+    margin: auto;
+    padding: 5% 0;
+}
+
+main h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 78px;
+    background: -webkit-linear-gradient(0deg, #35722d, #7472e7, #c2122f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+main h2 {
+    color: #FFF;
+    margin-bottom: 24px;
+    font-size: 16px;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    background-color:rgb(118, 116, 126);
+    justify-content: space-between;
+    width: 80%;
+    align-self: center;
+    border-radius: 12px;
+}
+
+main form input {
+    border: 0px;
+    width: 71%;
+    background-color: rgb(118, 116, 126);
+    padding: 12px;
+    border-radius: 12px;
+
+}
+::-webkit-input-placeholder {
+    color: #c9c5c5; }
+
+main form button {
+    padding: 12px 8px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+main p {
+    color: #fff;
+    margin-top: 16px;
+}
+
+.countdown {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .countdown-timer span {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: solid #c9c5c5 1px
+  }
+  
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
