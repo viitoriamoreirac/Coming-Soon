@@ -18,9 +18,24 @@ const countdownTimer = () => {
 
   
 function cadastrarEmail() {
-    var email = document.getElementById("email").value;
+  var emailInput = document.getElementById("email") 
+  var email = emailInput.value;
     if (email !== "") {
+      if (validarEmail(email)){
       alert("E-mail cadastrado!");
+      emailInput.value = "";
       console.log("teste")
+      } else{
+        alert("Por favor, insira um e-mail válido.")
+        emailInput.value = "";
+      }
     }
   }
+
+function validarEmail(email) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    return true
+  } else {
+    return false
+  }
+}
