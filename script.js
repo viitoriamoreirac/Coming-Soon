@@ -1,7 +1,7 @@
-const countdownTimer = () => {
-    const targetDate = new Date("July 31, 2023 00:00:00").getTime();
+const contagem = () => {
+    const finalDate = new Date("July 31, 2023 00:00:00").getTime();
     const now = new Date().getTime();
-    const difference = targetDate - now;
+    const difference = finalDate - now;
   
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -14,7 +14,7 @@ const countdownTimer = () => {
     document.getElementById("seconds").textContent = seconds;
   };
   
-  setInterval(countdownTimer, 1000);
+  setInterval(contagem, 1000);
 
   
 function cadastrarEmail() {
