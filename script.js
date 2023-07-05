@@ -16,11 +16,26 @@ const countdown = () => {
   
   setInterval(countdown, 1000);
 
-  
+
+function isNotEmpty(string){
+  if (string !== ""){
+    return true
+  } else {
+    return false
+  }
+}
+function validarEmail(email) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    return true
+  } else {
+    return false
+  }
+}
+
 function cadastrarEmail() {
   var emailInput = document.getElementById("email") 
   var email = emailInput.value;
-    if (email !== "") {
+    if (isNotEmpty(email)) {
       if (validarEmail(email)){
       alert("E-mail cadastrado!");
       emailInput.value = "";
@@ -31,11 +46,3 @@ function cadastrarEmail() {
       }
     }
   }
-
-function validarEmail(email) {
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    return true
-  } else {
-    return false
-  }
-}

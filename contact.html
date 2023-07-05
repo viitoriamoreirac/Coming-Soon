@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style-contact.css">
+</head>
+<body>
+<div class="formulario">
+    <h1>Fale conosco!</h1>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nameContact" name="nome" required><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="emailContact" name="email" required><br>
+
+    <label for="opiniao">Deixe sua opinião aqui!</label><br>
+    <textarea id="opinion" name="opiniao" rows="4" cols="50" required></textarea>
+
+    <button type="button" onclick="enviarForm()">Enviar</button>
+    <button type="button" onclick="redirect()"> Voltar a página inicial </button>
+</div>
+
+<script src="scriptContact.js"></script>
+</body>
+</html>

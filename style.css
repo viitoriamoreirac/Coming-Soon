@@ -24,6 +24,7 @@ header {
 header > img:nth-child(1) {
     mix-blend-mode: difference;
     transform: rotate(40deg) scale(75%);
+    margin-right: 120px;
 }
 
 header p, a{
