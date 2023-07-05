@@ -30,7 +30,7 @@ header p, a{
     color: #FFF;
     text-decoration: none;
     align-self: center;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 #contacts {
@@ -155,7 +155,9 @@ footer p {
         padding: 8px;
         font-size: 0.7rem;
     }
-    
+    header p, a {
+        margin-left: 1rem;
+    }
     main {
       width: 90%;
     }
