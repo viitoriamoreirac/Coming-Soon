@@ -1,4 +1,4 @@
-const contagem = () => {
+const countdown = () => {
     const finalDate = new Date("July 31, 2023 00:00:00").getTime();
     const now = new Date().getTime();
     const difference = finalDate - now;
@@ -14,7 +14,7 @@ const contagem = () => {
     document.getElementById("seconds").textContent = seconds;
   };
   
-  setInterval(contagem, 1000);
+  setInterval(countdown, 1000);
 
   
 function cadastrarEmail() {
